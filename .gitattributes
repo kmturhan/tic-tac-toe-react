@@ -1,0 +1,3 @@
+src/styles/*.css linguist-vendored
+build/** linguist-vendored
+public/*.html linguist-documentation
