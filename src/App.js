@@ -24,7 +24,7 @@ function Board({ xIsNext, squares, onPlay }) {
   const winner = calculateWinner(squares);
   let status;
   if (winner) {
-    status = !squares.includes(null) ? "Berabere" : "Kazanan : " + winner;
+    status = squares.includes(null) ? "Kazanan : " + winner : "Berabere";
   } else {
     status = "Sıradaki oyuncu : " + (xIsNext ? "X" : "O");
   }
